@@ -1,70 +1,46 @@
-# GlucoTwin AI - Digital Twin for Type 2 Diabetes
+# 🧬 GlucoTwin AI
 
-## 1. Team & College Information
+## 1. Team details & College/Incubator information
 - **Team Name:** CodeHurry
 - **College/Incubator:** Birla Institute Of Technology Mesra
 - **Team Members:** Arsh Srivastava (Team Leader), Bhumika Shree
 
 ## 2. Project Title
-GlucoTwin AI: An AI-Powered Digital Twin for Type 2 Diabetes Monitoring and Glucose Spike Prediction
+GlucoTwin AI: A Personalized Digital Twin for Type 2 Diabetes
 
 ## 3. Problem Statement & Healthcare Use Case
-**Problem:** Managing Type 2 Diabetes requires constant monitoring and anticipation of how lifestyle choices (meals, activity, hydration) affect blood glucose levels. Unpredicted glucose spikes (hyperglycemia) can lead to severe long-term complications.
-**Use Case:** GlucoTwin AI acts as a patient-specific Digital Twin that fuses clinical health records with time-series Continuous Glucose Monitor (CGM) and lifestyle data. It utilizes machine learning to predict potential glucose spikes up to two hours in advance, allowing for proactive, preventative action by both the patient and physician.
+**Problem Statement:** Managing Type 2 Diabetes requires constant monitoring and anticipation of how lifestyle choices (meals, activity, hydration) affect blood glucose levels. Unpredicted glucose spikes (hyperglycemia) can lead to severe long-term complications.
+**Healthcare Use Case:** GlucoTwin AI acts as a patient-specific Digital Twin that fuses clinical health records with time-series Continuous Glucose Monitor (CGM) and lifestyle data. It allows for proactive, preventative action by both the patient and physician.
 
 ## 4. Technical Stack
 - **Frontend/Dashboard:** Streamlit, Plotly (for interactive Radar & Time-Series charts)
 - **Backend/Data Processing:** Python, Pandas, NumPy
-- **AI/ML:** Scikit-learn (Random Forest Classifier) for time-series forecasting and spike prediction.
 - **Reporting:** `fpdf2` and `kaleido` for automated, offline PDF clinical report generation.
 
-## 5. Demonstration Video
-Watch the complete demonstration of GlucoTwin AI here:
-📺 **[View Demonstration Video (ScreenPal)](https://go.screenpal.com/watch/cO66IOnx9ae)**
+## 5. AI/ML Model or Framework Details
+- **Framework:** Scikit-Learn (Random Forest Classifier).
+- **Details:** The model extracts time-series features (time-lagged glucose readings up to 1 hour prior, glucose rate-of-change, rolling averages, and lagged lifestyle indicators) to predict a binary outcome: whether glucose will exceed 180 mg/dL in the subsequent 2-hour window.
+- **Data Source:** Due to healthcare privacy regulations, the base data is purely synthetic (generated via `data_generator.py`).
 
-## 6. Open-Source License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 6. Demonstration Video
+*(Note: 15-20 minute Demo Video is uploaded and the link is added below)*
+📺 **[View Demonstration Video](https://go.screenpal.com/watch/cO66IOnx9ae)**
 
-## 7. Architecture Diagram
-The complete system architecture diagram and data flow explanation can be found in the repository here:
+## 7. Open-source License Details
+This project is publicly licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 8. Architecture Diagram in PDF/PPT format
+The complete system architecture diagram is included in the repository.
 📄 **[View Architecture Diagram PDF](./GlucoTwin_Architecture.pdf)**
 
-## 8. Project Presentation
-*Presentation slides have been submitted via the official hackathon portal.*
+## 9. Presentation in PDF/PPT format covering project details and outcomes
+The final project presentation covering details and outcomes is included in the repository.
+📄 **[View Presentation PDF](./GlucoTwin_Presentation.pdf)**
 
-## 9. Instructions for Running the Application
+## 10. Public Accessibility & Instructions (All files publicly accessible)
+**Live Application Link:** https://glucotwin-ai-personalized-digital-twin.streamlit.app/
 
-### Prerequisites
-Make sure you have Python 3.8+ installed.
-
-### Setup
-1. Clone the repository and enter the directory:
-   ```bash
-   git clone https://github.com/arshsri0513/GlucoTwin-AI-Personalized-Digital-Twin.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Generate synthetic training data:
-   ```bash
-   python data_generator.py
-   ```
-4. Train the ML predictive model:
-   ```bash
-   python train_model.py
-   ```
-5. Run the interactive Streamlit Dashboard:
-   ```bash
-   streamlit run app.py
-   ```
-
-## 10. Data Source, ML Evaluation, & Limitations
-- **Data Source:** Due to healthcare privacy regulations, all data is purely synthetic. Base datasets are generated via `data_generator.py` simulating 24-hour CGM readings, meal carbohydrate intake, and physical activity intensity. The web UI also includes an on-the-fly synthetic data generator to match dynamic clinical inputs (HbA1c, current glucose).
-- **Preprocessing:** Time-series feature engineering includes time-lagged glucose readings (up to 1 hour prior), glucose rate-of-change (ROC), rolling averages, and lagged lifestyle indicators (carbs/activity).
-- **Model:** Scikit-Learn Random Forest Classifier trained to predict a binary outcome: whether glucose will exceed 180 mg/dL in the subsequent 2-hour window.
-- **Evaluation:** The model achieves high accuracy on the synthetic validation set. Real-world deployment would require fine-tuning on IRB-approved clinical CGM datasets.
-- **Advanced Features:** 
-  - **Automated PDF Reporting** (`fpdf2`, `kaleido`) embedding live Plotly charts.
-  - **Physiological What-If Engine:** Simulates the effects of Carbs, Activity, and Hydration (Renal Filtration) on predicted glucose peaks.
-- **Limitations:** This is a proof-of-concept relying on synthetic statistical heuristics rather than true physiological metabolic differential equations. Not intended for actual medical use.
+### Instructions to run locally
+1. Clone the repository: `git clone https://github.com/arshsri0513/GlucoTwin-AI-Personalized-Digital-Twin.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run Dashboard: `streamlit run app.py`
