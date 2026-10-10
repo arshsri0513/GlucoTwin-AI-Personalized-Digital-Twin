@@ -30,7 +30,7 @@ The complete system architecture diagram and data flow explanation can be found 
 📄 **[View Architecture Diagram PDF](./GlucoTwin_Architecture.pdf)**
 
 ## 8. Project Presentation
-*(Please upload your final Presentation PDF/PPT to this repository and link it here)*
+*Presentation slides have been submitted via the official hackathon portal.*
 
 ## 9. Instructions for Running the Application
 
