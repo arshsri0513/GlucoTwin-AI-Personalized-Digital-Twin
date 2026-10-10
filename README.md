@@ -25,7 +25,7 @@ GlucoTwin AI: An AI-Powered Digital Twin for Type 2 Diabetes Monitoring and Gluc
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 7. Architecture Diagram
-*(Please upload your Architecture PDF or PPT to this repository and link it here)*
+[View the Architecture Diagram PDF here](GlucoTwin_Architecture.pdf)
 
 ## 8. Project Presentation
 *(Please upload your final Presentation PDF or PPT to this repository and link it here)*
