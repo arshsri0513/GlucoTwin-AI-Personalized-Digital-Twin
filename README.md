@@ -19,16 +19,17 @@ GlucoTwin AI: An AI-Powered Digital Twin for Type 2 Diabetes Monitoring and Gluc
 - **Reporting:** `fpdf2` and `kaleido` for automated, offline PDF clinical report generation.
 
 ## 5. Demonstration Video
-*(Please add the link to your YouTube/Vimeo video here before submission)*
+[Link to Live Demonstration Video]
 
 ## 6. Open-Source License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 7. Architecture Diagram
-[View the Architecture Diagram PDF here](GlucoTwin_Architecture.pdf)
+The complete system architecture diagram and data flow explanation can be found in the repository here:
+📄 **[View Architecture Diagram PDF](./GlucoTwin_Architecture.pdf)**
 
 ## 8. Project Presentation
-*(Please upload your final Presentation PDF or PPT to this repository and link it here)*
+*(Please upload your final Presentation PDF/PPT to this repository and link it here)*
 
 ## 9. Instructions for Running the Application
 
@@ -38,7 +39,7 @@ Make sure you have Python 3.8+ installed.
 ### Setup
 1. Clone the repository and enter the directory:
    ```bash
-   git clone https://github.com/arshsri0513/CodeHurry_Birla-Institute-Of-Technology-Mesra.git
+   git clone https://github.com/arshsri0513/GlucoTwin-AI-Personalized-Digital-Twin.git
    ```
 2. Install dependencies:
    ```bash
