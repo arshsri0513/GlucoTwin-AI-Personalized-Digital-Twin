@@ -19,7 +19,8 @@ GlucoTwin AI: An AI-Powered Digital Twin for Type 2 Diabetes Monitoring and Gluc
 - **Reporting:** `fpdf2` and `kaleido` for automated, offline PDF clinical report generation.
 
 ## 5. Demonstration Video
-[Link to Live Demonstration Video]
+Watch the complete demonstration of GlucoTwin AI here:
+📺 **[View Demonstration Video (ScreenPal)](https://go.screenpal.com/watch/cO66IOnx9ae)**
 
 ## 6. Open-Source License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
